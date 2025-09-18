@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Gaya untuk Hero Section */
+.hero-section {
+  background-image: url("https://via.placeholder.com/1200x500");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.rounded-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rounded-btn:hover {
+  background-color: #555;
+}
+
+
+/* Gaya untuk Medicine Section */
+.medicine-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.medicine-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.medicine-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.medicine-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.medicine-item img {
+  display: block;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px 10px 0 0;
+}
+
+.medicine-item p {
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+
+/* Gaya untuk Testimony Section */
+.testimony-section {
+  padding: 2rem;
+  height: 500px;
+  text-align: center;
+}
+
+.testimony-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimony-grid {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.testimony-item {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimony-item img {
+  width: 200px;
+  height: 200px;
+  margin-top: -50px;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+    box-shadow: 0 10px 20px rgb(117, 109, 109);
+}
+
+.testimony-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimony-item p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Gaya untuk Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer-left h3 {
+  margin: 0;
+}
+
+.footer-left p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.footer-grid h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-grid li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-grid a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  border-bottom: 1px solid #fff;
+}
+.footer-botom-reserved {
+  font-size: 16px;
+}
