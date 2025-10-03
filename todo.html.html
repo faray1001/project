@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist To Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h2>Daily Goals</h2>
+      <button id="toggleTheme">🎯</button>
+    </div>
+
+    <ul class="todo-list">
+      <li>
+        <input type="checkbox" id="task1">
+        <label for="task1"><strong>Menghisap diri</strong></label>
+      </li>
+      <li>
+        <input type="checkbox" id="task2">
+        <label for="task2"><strong>Sholat 5 waktu</strong></label>
+      </li>
+      <li>
+        <input type="checkbox" id="task3">
+        <label for="task3"><strong>Belajar javascript</strong></label>
+      </li>
+      <li>
+        <input type="checkbox" id="task4">
+        <label for="task4"><strong>Berdo'a</strong></label>
+      </li>
+      <li>
+        <input type="checkbox" id="task5">
+        <label for="task5"><strong>Mendapatkan pengetahuan baru</strong></label>
+      </li>
+      <li>
+        <input type="checkbox" id="task6">
+        <label for="task6"><strong>Bersedekah</strong></label>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById("toggleTheme");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        toggleBtn.textContent = "🎯";
+      } else {
+        toggleBtn.textContent = "🎯";
+      }
+    });
+  </script>
+</body>
+</html>
