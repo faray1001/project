@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Widget</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="container">
+    <button class="toggle-btn" id="modeToggle">
+  🌙 Mode
+</button>
+
+
+    <div class="weather-widget fade">
+      <div class="weather-top">
+        <div class="weather-icon">⛅</div>
+        <div class="temp">29°C</div>
+      </div>
+      <div class="weather-info">
+        <p class="condition">Partly Cloudy</p>
+        <p class="location">Bogor, ID</p>
+        <p id="date" class="date"></p>
+        <p id="clock" class="clock"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
