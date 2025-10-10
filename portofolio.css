@@ -1,0 +1,167 @@
+:root {
+  --pink: #f8d8e3;
+  --beige: #ffffff;
+  --gold: #d4af37;
+  --text: #5b4a4a;
+  --shadow: rgb(0, 0, 0);
+  --blue: #05f7ff;
+  --asyik: #0a0a0a;
+  --blues: #18b2b8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--shadow);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px var(--beige);
+  overflow: hidden;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, var(--blue), var(--beige));
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--asyik);
+  margin-bottom: 15px;
+}
+
+.sidebar h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.sidebar .title {
+  color: #8f7a7a;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  color: var(--blues);
+  font-size: 20px;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: #05f7ff;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--blues);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 25px;
+  box-shadow: 0 4px 10px rgba(0, 225, 255, 0.3);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--beige);
+  color : var(--blues);
+}
+
+.content {
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: var(--blues);
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 5px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: var(--blue);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px var(--asyik);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--beige);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list span {
+  background: var(--blue);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+textarea {
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button.btn {
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    border-bottom: 1px solid var(--asyik);
+  }
+}
